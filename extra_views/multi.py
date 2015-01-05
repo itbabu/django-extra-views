@@ -18,7 +18,7 @@ class FormProvider(object):
         return self.context_suffix
 
     def get_form(self, caller, prefix):
-        kwargs = {}i
+        kwargs = {}
 
         for k, v in six.iteritems(self.init_args):
             method_name = v % prefix
